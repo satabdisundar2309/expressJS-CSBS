@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile Page</title>
+</head>
+<body>
+       <!-- using the common header that we made inside the common folder in the header.ejs page -->
+       <%- include('common/header');%> 
+       <!-- in the above syntax, the hyphen is very important to render the common element -->
+       <!-- NOTE: Including the common element only works in the files with .ejs extension, notr in other static pages like .html etc -->
+    <h1 style="color: rgb(18, 92, 68);">This is our profile Page</h1>
+    <h1 style="color: rgb(238, 0, 255);">Welcome Mr. <%= users[0].name %></h1>
+    <h1 style="color: rgb(255, 128, 0);">Country:  <%= users[0].country %></h1>
+    <h3 style="color: rgb(10, 26, 255);">Your email is: <%= users[0].email %></h3>
+    <!-- using loops to access iterable datas in ejs files -->
+    <ul>
+        <h1 style="color: rgb(10, 255, 83);">Skills</h1>
+        <% users[0].skills.forEach((skill)=>{%>
+                <li style="color: rgb(255, 10, 116);"><%= skill %></li>
+       <% })%>
+    </ul>
+</body>
+</html>

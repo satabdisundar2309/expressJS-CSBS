@@ -1,0 +1,14 @@
+{
+  "name": "06_expressjsroutelevelmiddleware",
+  "version": "1.0.0",
+  "description": "This is the 6th program of expressJS for route lecvel middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satabdisundar Behera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
